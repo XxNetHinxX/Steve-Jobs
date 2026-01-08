@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Биография Стива Джобса</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome для иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Наши стили -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fab fa-apple me-2"></i>Стив Джобс
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Биография</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work">Изобретения</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#quotes">Цитаты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacts">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Главный экран -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <h1 class="display-3 fw-bold mb-4 animate-text">Стив Джобс</h1>
+                    <p class="lead mb-4">1955 - 2011</p>
+                    <p class="mb-5">Американский предприниматель, изобретатель и промышленный дизайнер, сооснователь и CEO корпорации Apple Inc.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <button class="btn btn-primary btn-lg" id="learnMoreBtn">
+                            <i class="fas fa-book me-2"></i>Узнать больше
+                        </button>
+                        <button class="btn btn-outline-light btn-lg" id="watchVideoBtn">
+                            <i class="fas fa-play me-2"></i>Смотреть видео
+                        </button>
+                        <button class="btn btn-outline-light btn-lg" id="wikiBtn">
+                            <i class="fab fa-wikipedia-w me-2"></i>Википедия
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Steve_Jobs_Headshot_2010-CROP_%28cropped_2%29.jpg" 
+                         alt="Стив Джобс" class="img-fluid rounded-circle hero-img animate-img">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Биография -->
+    <section id="about" class="py-5 section-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="section-title text-center mb-5">Биография</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 fade-in">
+                        <div class="card-body">
+                            <h3 class="card-title"><i class="fas fa-user-graduate me-2"></i>Ранние годы</h3>
+                            <p class="card-text">
+                                Стивен Пол Джобс родился 24 февраля 1955 года в Сан-Франциско, Калифорния. 
+                                Его биологическими родителями были студенты: Абдулфаттах Джандали и Джоан Кэрол Шибле.
+                            </p>
+                            <p class="card-text">
+                                В 1972 году Джобс поступил в Рид-колледж в Портленде, но бросил его после первого семестра. 
+                                Тем не менее, он продолжал посещать интересующие его курсы, включая каллиграфию, которая впоследствии 
+                                повлияла на типографику в продуктах Apple.
+                            </p>
+                            <div class="mt-3">
+                                <button class="btn btn-sm btn-outline-primary open-modal-btn" data-title="Детали о ранних годах" data-content="После рождения Стива его биологические родители решили отдать его на усыновление. Он был усыновлен Полом и Кларой Джобс. Пол был механиком, а Клара — бухгалтером. С детства Стив проявлял интерес к электронике, чему способствовал его приемный отец, который работал с машинами.">
+                                    <i class="fas fa-info-circle me-1"></i>Подробнее
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 fade-in">
+                        <div class="card-body">
+                            <h3 class="card-title"><i class="fas fa-briefcase me-2"></i>Карьера и Apple</h3>
+                            <p class="card-text">
+                                В 1976 году Джобс вместе со Стивом Возняком и Рональдом Уэйном основал компанию Apple Computer (теперь Apple Inc.). 
+                                Их первым продуктом был компьютер Apple I, собранный вручную.
+                            </p>
+                            <p class="card-text">
+                                В 1985 году Джобс был вынужден покинуть Apple, но вернулся в 1997 году, когда компания находилась на грани банкротства. 
+                                Под его руководством Apple представила революционные продукты: iMac, iPod, iPhone и iPad.
+                            </p>
+                            <div class="mt-3">
+                                <button class="btn btn-sm btn-outline-primary open-modal-btn" data-title="Возвращение в Apple" data-content="Когда Джобс вернулся в Apple в 1997 году, компания теряла миллионы долларов ежемесячно. Его первым шагом было сокращение линейки продуктов с более чем 40 до всего 4. Он также запустил знаменитую рекламную кампанию 'Think Different', которая помогла восстановить бренд Apple.">
+                                    <i class="fas fa-info-circle me-1"></i>Подробнее
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="card fade-in">
+                        <div class="card-body">
+                            <h3 class="card-title"><i class="fas fa-star me-2"></i>Наследие</h3>
+                            <p class="card-text">
+                                Стив Джобс скончался 5 октября 2011 года после многолетней борьбы с раком поджелудочной железы. 
+                                Его наследие включает не только технологические инновации, но и новый подход к дизайну, маркетингу 
+                                и взаимодействию человека с технологиями. Джобс получил посмертно Президентскую медаль Свободы в 2022 году.
+                            </p>
+                            <div class="text-center mt-4">
+                                <button class="btn btn-outline-primary" id="timelineBtn">
+                                    <i class="fas fa-history me-2"></i>Показать хронологию
+                                </button>
+                                <button class="btn btn-outline-primary ms-2" id="legacyBtn">
+                                    <i class="fas fa-landmark me-2"></i>Наследие
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Работы и изобретения -->
+    <section id="work" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="section-title text-center mb-5">Изобретения и продукты</h2>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card product-card h-100 fade-in">
+                        <div class="card-img-top product-img" style="background-color: #f0f0f0;">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Apple I (1976)</h5>
+                            <p class="card-text">Первый компьютер Apple, созданный Стивом Возняком и проданный Стивом Джобсом.</p>
+                            <button class="btn btn-sm btn-outline-primary open-modal-btn" data-title="Apple I" data-content="Apple I был первым продуктом компании Apple Computer. Он поставлялся в виде собранной материнской платы, к которой пользователям нужно было добавить корпус, блок питания, клавиатуру и монитор. Всего было произведено около 200 единиц, и сегодня сохранившиеся экземпляры являются коллекционной редкостью.">
+                                <i class="fas fa-info-circle me-1"></i>Подробнее
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card product-card h-100 fade-in">
+                        <div class="card-img-top product-img" style="background-color: #e8f4f8;">
+                            <i class="fas fa-compact-disc"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Macintosh (1984)</h5>
+                            <p class="card-text">Первый успешный массовый ПК с графическим интерфейсом и мышью.</p>
+                            <button class="btn btn-sm btn-outline-primary open-modal-btn" data-title="Macintosh" data-content="Macintosh был представлен в 1984 году с знаменитой рекламой '1984', показанной во время Супербоула. Это был первый успешный персональный компьютер с графическим пользовательским интерфейсом и мышью. Первый Macintosh имел 128 КБ оперативной памяти и стоил 2 495 долларов.">
+                                <i class="fas fa-info-circle me-1"></i>Подробнее
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card product-card h-100 fade-in">
+                        <div class="card-img-top product-img" style="background-color: #f8f0e8;">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">iPod (2001)</h5>
+                            <p class="card-text">Портативный MP3-плеер, изменивший музыкальную индустрию.</p>
+                            <button class="btn btn-sm btn-outline-primary open-modal-btn" data-title="iPod" data-content="Первый iPod был представлен в 2001 году с емкостью 5 ГБ, что позволяло хранить '1000 песен в вашем кармане'. Он стал невероятно популярным и помог Apple стать лидером на рынке портативных медиаплееров. К 2007 году было продано более 100 миллионов iPod.">
+                                <i class="fas fa-info-circle me-1"></i>Подробнее
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card product-card h-100 fade-in">
+                        <div class="card-img-top product-img" style="background-color: #e8f0f8;">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">iPhone (2007)</h5>
+                            <p class="card-text">Первый смартфон с сенсорным экраном, переопределивший мобильные телефоны.</p>
+                            <button class="btn btn-sm btn-outline-primary open-modal-btn" data-title="iPhone" data-content="Первый iPhone был представлен Стивом Джобсом в 2007 году и назван им 'революционным продуктом'. Он объединил в себе iPod, телефон и интернет-коммуникатор. Первая модель имела 4 ГБ или 8 ГБ памяти и стоила 499 или 599 долларов соответственно. К 2021 году было продано более 2 миллиардов iPhone.">
+                                <i class="fas fa-info-circle me-1"></i>Подробнее
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card product-card h-100 fade-in">
+                        <div class="card-img-top product-img" style="background-color: #f0e8f8;">
+                            <i class="fas fa-tablet-alt"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">iPad (2010)</h5>
+                            <p class="card-text">Планшетный компьютер, создавший новый класс устройств.</p>
+                            <button class="btn btn-sm btn-outline-primary open-modal-btn" data-title="iPad" data-content="iPad был представлен в 2010 году как устройство между смартфоном и ноутбуком. Первый iPad имел 9,7-дюймовый дисплей и работал на процессоре Apple A4. Он создал новый класс устройств - планшетные компьютеры. За первые 80 дней было продано 3 миллиона iPad.">
+                                <i class="fas fa-info-circle me-1"></i>Подробнее
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card product-card h-100 fade-in">
+                        <div class="card-img-top product-img" style="background-color: #f8f8e8;">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Pixar (1986)</h5>
+                            <p class="card-text">Анимационная студия, купленная Джобсом и выпустившая 'Историю игрушек'.</p>
+                            <button class="btn btn-sm btn-outline-primary open-modal-btn" data-title="Pixar" data-content="Стив Джобс купил подразделение компьютерной графики у Lucasfilm в 1986 году за 10 миллионов долларов и переименовал его в Pixar. Первоначально компания занималась продажей компьютерного оборудования, но позже сосредоточилась на анимации. В 1995 году Pixar выпустила 'Историю игрушек' - первый полнометражный компьютерный анимационный фильм. В 2006 году Disney купила Pixar за 7,4 миллиарда долларов.">
+                                <i class="fas fa-info-circle me-1"></i>Подробнее
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <button class="btn btn-primary" id="allProductsBtn">
+                        <i class="fas fa-external-link-alt me-2"></i>Все продукты Apple
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Цитаты -->
+    <section id="quotes" class="py-5 section-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="section-title text-center mb-5">Знаменитые цитаты</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card mb-4 fade-in">
+                        <div class="card-body">
+                            <blockquote class="blockquote">
+                                <p class="mb-0"><i class="fas fa-quote-left me-2 text-primary"></i>Инновации отличают лидера от догоняющего.<i class="fas fa-quote-right ms-2 text-primary"></i></p>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="card mb-4 fade-in">
+                        <div class="card-body">
+                            <blockquote class="blockquote">
+                                <p class="mb-0"><i class="fas fa-quote-left me-2 text-primary"></i>Ваше время ограничено, не тратьте его, живя чужой жизнью.<i class="fas fa-quote-right ms-2 text-primary"></i></p>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="card mb-4 fade-in">
+                        <div class="card-body">
+                            <blockquote class="blockquote">
+                                <p class="mb-0"><i class="fas fa-quote-left me-2 text-primary"></i>Единственный способ делать великие дела — любить то, что вы делаете.<i class="fas fa-quote-right ms-2 text-primary"></i></p>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-primary" id="newQuoteBtn">
+                            <i class="fas fa-random me-2"></i>Новая цитата
+                        </button>
+                        <button class="btn btn-outline-primary ms-2" id="shareQuoteBtn">
+                            <i class="fas fa-share-alt me-2"></i>Поделиться цитатой
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты и отзывы -->
+    <section id="contacts" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="section-title text-center mb-5">Контакты и отзывы</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <h3 class="mb-4">Контактная информация</h3>
+                    <div class="contact-info">
+                        <div class="d-flex align-items-center mb-4 fade-in">
+                            <div class="contact-icon me-3">
+                                <i class="fas fa-history"></i>
+                            </div>
+                            <div>
+                                <h5>Наследие Стива Джобса</h5>
+                                <p class="mb-0">Изучите больше о влиянии Джобса на современные технологии</p>
+                                <button class="btn btn-sm btn-link p-0 mt-1 open-modal-btn" data-title="Наследие Стива Джобса" data-content="Стив Джобс оставил неизгладимый след в мире технологий и дизайна. Его философия минимализма, внимание к деталям и стремление к совершенству изменили несколько отраслей: персональные компьютеры, анимационные фильмы, музыку, телефоны, планшеты и розничную торговлю.">
+                                    <i class="fas fa-info-circle me-1"></i>Подробнее
+                                </button>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-4 fade-in">
+                            <div class="contact-icon me-3">
+                                <i class="fas fa-apple"></i>
+                            </div>
+                            <div>
+                                <h5>Apple Inc.</h5>
+                                <p class="mb-0">Купертино, Калифорния, США</p>
+                                <p class="mb-0">www.apple.com</p>
+                                <button class="btn btn-sm btn-link p-0 mt-1" id="visitAppleBtn">
+                                    <i class="fas fa-external-link-alt me-1"></i>Перейти на сайт
+                                </button>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-4 fade-in">
+                            <div class="contact-icon me-3">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <div>
+                                <h5>Биография</h5>
+                                <p class="mb-0">Официальная биография Уолтера Айзексона</p>
+                                <p class="mb-0">"Стив Джобс" (2011)</p>
+                                <button class="btn btn-sm btn-link p-0 mt-1" id="bookBtn">
+                                    <i class="fas fa-shopping-cart me-1"></i>Купить книгу
+                                </button>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center fade-in">
+                            <div class="contact-icon me-3">
+                                <i class="fas fa-film"></i>
+                            </div>
+                            <div>
+                                <h5>Фильмы о Джобсе</h5>
+                                <p class="mb-0">"Джобс: Империя соблазна" (2013)</p>
+                                <p class="mb-0">"Стив Джобс" (2015) с Майклом Фассбендером</p>
+                                <button class="btn btn-sm btn-link p-0 mt-1" id="filmsBtn">
+                                    <i class="fas fa-video me-1"></i>Смотреть трейлер
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="mb-4">Оставить отзыв о сайте</h3>
+                    <form id="feedbackForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Ваше имя</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="rating" class="form-label">Оценка сайта</label>
+                            <div class="rating-stars mb-2">
+                                <i class="far fa-star" data-rating="1"></i>
+                                <i class="far fa-star" data-rating="2"></i>
+                                <i class="far fa-star" data-rating="3"></i>
+                                <i class="far fa-star" data-rating="4"></i>
+                                <i class="far fa-star" data-rating="5"></i>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <small class="text-muted">Плохо</small>
+                                <small class="text-muted">Отлично</small>
+                            </div>
+                            <input type="hidden" id="rating" value="0" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Ваш отзыв</label>
+                            <textarea class="form-control" id="message" rows="4" required placeholder="Что вам понравилось на сайте? Что можно улучшить?"></textarea>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                <i class="fas fa-paper-plane me-2"></i>Отправить отзыв
+                            </button>
+                        </div>
+                    </form>
+                    <div class="alert alert-success mt-4 d-none" id="successMessage">
+                        <i class="fas fa-check-circle me-2"></i>Спасибо за ваш отзыв!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">© 2023 Биография Стива Джобса. Все права защищены.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-light me-3 social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-light me-3 social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-light me-3 social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-light social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно -->
+    <div class="modal fade" id="infoModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="modalContent">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS и зависимость -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Наш JavaScript -->
+    <script src="js/index.js"></script>
+</body>
+</html>
